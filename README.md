@@ -2,7 +2,7 @@
   <img src="docs/images/icon.png" width="128" alt="Theme Plaza">
 </p>
 
-<h1 align="center">Theme Plaza</h1>
+<h1 align="center">Theme Plaza App</h1>
 
 <p align="center">Themes, splash screens and badges for your 3DS, straight from <a href="https://themeplaza.art">themeplaza.art</a>.</p>
 
