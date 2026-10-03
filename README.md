@@ -7,6 +7,13 @@
 <p align="center">Themes, splash screens and badges for your 3DS, straight from <a href="https://themeplaza.art">themeplaza.art</a>.</p>
 
 <p align="center">
+  <a href="https://github.com/KennLDN/themeplaza-app/releases/latest"><img src="https://img.shields.io/github/v/release/KennLDN/themeplaza-app?label=release&color=1e86d8" alt="Latest release"></a>
+  <a href="https://github.com/KennLDN/themeplaza-app/releases"><img src="https://img.shields.io/github/downloads/KennLDN/themeplaza-app/total?color=1e86d8" alt="Downloads"></a>
+  <a href="https://github.com/KennLDN/themeplaza-app/actions/workflows/build.yml"><img src="https://github.com/KennLDN/themeplaza-app/actions/workflows/build.yml/badge.svg" alt="Build"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/KennLDN/themeplaza-app?color=1e86d8" alt="MIT licence"></a>
+</p>
+
+<p align="center">
   <img src="docs/images/collection.png" width="320" alt="The Collection page">
   &nbsp;&nbsp;
   <img src="docs/images/theme-plaza.png" width="320" alt="The Theme Plaza page">
