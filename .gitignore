@@ -1,0 +1,18 @@
+# build output
+app/build/
+app/build-release/
+app/build-fake/
+app/*.3dsx
+app/*.cia
+app/*.elf
+app/*.smdh
+
+# local environments and caches
+tools/.venv/
+__pycache__/
+tools/hosttest/out/
+
+# test content and results: fetched from themeplaza.art and the emulator by the scripts
+emulator/fixtures/
+emulator/shots/
+

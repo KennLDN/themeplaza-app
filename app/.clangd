@@ -1,0 +1,3 @@
+# The 3DS SDK headers live inside the build container, so host-side clangd cannot resolve them.
+Diagnostics:
+  Suppress: ["*"]

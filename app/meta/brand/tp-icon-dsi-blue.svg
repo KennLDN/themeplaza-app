@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 1600" width="1600" height="1600">
+  <title>TP icon (DSi blue)</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#46AAFB"/>
+      <stop offset="0.125" stop-color="#3DA4F2"/>
+      <stop offset="0.25" stop-color="#339BE8"/>
+      <stop offset="0.375" stop-color="#238DD8"/>
+      <stop offset="0.5" stop-color="#157CC4"/>
+      <stop offset="0.625" stop-color="#086EAD"/>
+      <stop offset="0.75" stop-color="#035E91"/>
+      <stop offset="0.875" stop-color="#02527B"/>
+      <stop offset="1" stop-color="#00496E"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="1" x2="0" y2="0"><!-- flipped: letter paths use a y-inverted transform -->
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F1F3FB"/>
+    </linearGradient>
+    <path id="T" transform="translate(0,1600) scale(0.05,-0.05)" d="M14880 22449 c-47 -5 -247 -36 -445 -69 -198 -33 -562 -91 -810 -130 -247 -38 -603 -97 -790 -131 -187 -33 -481 -85 -654 -115 -419 -72 -577 -102 -956 -179 -176 -35 -552 -111 -835 -169 -283 -57 -558 -113 -610 -125 -52 -11 -214 -43 -360 -71 -146 -27 -436 -88 -645 -135 -209 -48 -519 -118 -690 -156 -170 -38 -537 -125 -815 -193 -278 -68 -539 -132 -580 -141 -384 -86 -2023 -500 -2163 -546 -431 -144 -808 -511 -936 -914 -92 -286 -102 -539 -36 -920 19 -115 54 -316 76 -445 22 -129 54 -293 70 -365 17 -71 52 -224 79 -340 91 -391 175 -685 227 -789 121 -245 490 -479 849 -540 404 -68 590 -65 999 15 205 40 391 69 735 114 229 30 546 92 892 175 414 100 850 175 973 167 224 -13 278 -133 219 -487 -47 -287 -45 -403 15 -750 28 -162 74 -430 102 -595 28 -165 68 -388 89 -495 22 -107 51 -265 65 -350 37 -220 90 -484 140 -705 24 -104 58 -273 75 -375 16 -102 44 -250 60 -329 17 -79 44 -228 60 -330 27 -170 72 -384 197 -946 24 -110 77 -360 118 -555 40 -195 81 -386 90 -425 37 -161 179 -816 220 -1019 120 -590 208 -755 509 -951 547 -357 1147 -385 2376 -114 1261 279 1815 604 2049 1204 125 319 125 363 -9 958 -152 680 -214 943 -380 1607 -98 393 -236 945 -306 1225 -70 281 -162 638 -206 795 -43 157 -113 416 -154 575 -190 733 -488 1853 -531 1995 -64 212 -132 332 -272 485 -167 181 -200 285 -128 405 76 128 132 147 977 341 146 33 362 83 480 111 118 27 330 69 470 93 324 55 432 81 822 199 419 127 518 169 914 392 223 125 432 367 481 554 53 206 -52 940 -228 1595 -28 105 -79 309 -114 455 -101 425 -161 586 -292 784 -292 444 -906 714 -1483 655z"/>
+    <path id="P" transform="translate(0,1600) scale(0.05,-0.05)" d="M21760 24195 c-14 -3 -138 -9 -275 -15 -1745 -71 -3167 -786 -4183 -2103 -380 -492 -388 -546 -172 -1202 72 -219 128 -456 180 -760 17 -99 49 -270 70 -380 141 -722 116 -1117 -96 -1535 -195 -383 -543 -693 -974 -870 -327 -134 -321 -121 -460 -955 -173 -1032 -212 -1275 -310 -1965 -28 -195 -67 -449 -86 -565 -31 -186 -76 -496 -160 -1115 -14 -102 -36 -257 -49 -345 -13 -88 -29 -205 -35 -260 -6 -55 -28 -197 -48 -315 -97 -579 -21 -845 316 -1103 218 -168 1087 -436 1692 -522 63 -9 198 -29 300 -45 1290 -201 1898 -36 2386 646 183 257 260 502 284 909 6 105 20 267 30 361 11 94 24 247 30 340 29 453 128 528 545 415 376 -101 986 -190 1494 -217 916 -48 1578 44 2454 343 475 161 1186 547 1617 877 377 288 480 381 745 671 307 336 342 382 587 770 370 585 425 713 592 1380 187 744 197 1675 29 2530 -296 1509 -931 2567 -2138 3566 -855 707 -2078 1223 -3305 1394 -290 40 -964 84 -1060 70z m795 -3965 c808 -121 1287 -576 1380 -1310 9 -69 34 -215 55 -325 75 -385 76 -559 10 -887 -287 -1405 -2096 -1892 -3063 -825 -426 470 -564 1007 -432 1687 19 96 41 228 50 293 64 475 302 855 682 1084 292 176 525 265 783 297 61 7 462 -3 535 -14z"/>
+    <!-- P silhouette incl. its extrusion: the thin gap line under the T is only drawn here -->
+    <clipPath id="Pclip">
+      <use href="#P" xlink:href="#P"/>
+      <use href="#P" xlink:href="#P" y="15"/>
+      <use href="#P" xlink:href="#P" y="30"/>
+    </clipPath>
+  </defs>
+  <rect width="1600" height="1600" fill="url(#bg)"/>
+  <g fill="#03416A">
+    <use href="#P" xlink:href="#P" x="4" y="58"/>
+    <use href="#T" xlink:href="#T" x="4" y="58"/>
+  </g>
+  <g fill="#C3CAF1">
+    <use href="#P" xlink:href="#P" y="2"/>
+    <use href="#P" xlink:href="#P" y="4"/>
+    <use href="#P" xlink:href="#P" y="6"/>
+    <use href="#P" xlink:href="#P" y="8"/>
+    <use href="#P" xlink:href="#P" y="10"/>
+    <use href="#P" xlink:href="#P" y="12"/>
+    <use href="#P" xlink:href="#P" y="14"/>
+    <use href="#P" xlink:href="#P" y="16"/>
+    <use href="#P" xlink:href="#P" y="18"/>
+    <use href="#P" xlink:href="#P" y="20"/>
+    <use href="#P" xlink:href="#P" y="22"/>
+    <use href="#P" xlink:href="#P" y="24"/>
+    <use href="#P" xlink:href="#P" y="26"/>
+    <use href="#P" xlink:href="#P" y="28"/>
+    <use href="#P" xlink:href="#P" y="30"/>
+  </g>
+  <use href="#P" xlink:href="#P" fill="url(#face)"/>
+  <g clip-path="url(#Pclip)">
+    <use href="#T" xlink:href="#T" fill="none" stroke="#0B5C96" stroke-width="360" stroke-linejoin="round"/>
+  </g>
+  <g fill="#C3CAF1">
+    <use href="#T" xlink:href="#T" y="2"/>
+    <use href="#T" xlink:href="#T" y="4"/>
+    <use href="#T" xlink:href="#T" y="6"/>
+    <use href="#T" xlink:href="#T" y="8"/>
+    <use href="#T" xlink:href="#T" y="10"/>
+    <use href="#T" xlink:href="#T" y="12"/>
+    <use href="#T" xlink:href="#T" y="14"/>
+    <use href="#T" xlink:href="#T" y="16"/>
+    <use href="#T" xlink:href="#T" y="18"/>
+    <use href="#T" xlink:href="#T" y="20"/>
+    <use href="#T" xlink:href="#T" y="22"/>
+    <use href="#T" xlink:href="#T" y="24"/>
+    <use href="#T" xlink:href="#T" y="26"/>
+    <use href="#T" xlink:href="#T" y="28"/>
+    <use href="#T" xlink:href="#T" y="30"/>
+  </g>
+  <use href="#T" xlink:href="#T" fill="url(#face)"/>
+</svg>
