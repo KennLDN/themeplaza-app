@@ -1,0 +1,37 @@
+name: Release
+
+# Pushing a tag like v0.4.0 builds that version and publishes it as a GitHub release.
+# The tag must match the version in app/build.sh.
+
+on:
+  push:
+    tags: ['v*']
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    container: devkitpro/devkitarm:latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Packaging needs Python
+        run: apt-get update -qq && apt-get install -y -qq python3 >/dev/null
+      - name: Check the tag against the version in build.sh
+        run: |
+          version=$(app/build.sh version)
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "tag $GITHUB_REF_NAME, but app/build.sh says $version"; exit 1
+          fi
+      - name: Build
+        run: cd app && ./build.sh release
+      - name: Name the files after the version
+        run: |
+          version=$(app/build.sh version)
+          mkdir -p out
+          cp app/theme-plaza-release.cia "out/theme-plaza-$version.cia"
+          cp app/theme-plaza-release.3dsx "out/theme-plaza-$version.3dsx"
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: out/*
+          generate_release_notes: true

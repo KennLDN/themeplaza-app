@@ -1,0 +1,23 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: devkitpro/devkitarm:latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Packaging needs Python
+        run: apt-get update -qq && apt-get install -y -qq python3 >/dev/null
+      - name: Build
+        run: cd app && ./build.sh release
+      - uses: actions/upload-artifact@v4
+        with:
+          name: theme-plaza
+          path: |
+            app/theme-plaza-release.cia
+            app/theme-plaza-release.3dsx

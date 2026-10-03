@@ -1,9 +1,11 @@
 #!/bin/sh
-# Builds the app in the devkitARM container, then packages the .cia on the host.
+# Builds the app with devkitARM (in the devkitPro container unless this is already running inside it), then
+# packages the .cia with the tools in tools/bin.
 #
 #   ./build.sh            development build: theme-plaza.3dsx, theme-plaza.cia (with the test channel and the timing log)
 #   ./build.sh release    the build to hand out: theme-plaza-release.3dsx, theme-plaza-release.cia (without them)
 #   ./build.sh clean      removes the development build's objects
+#   ./build.sh version    prints the version number
 set -e
 cd "$(dirname "$0")"
 TOOLS="$PWD/../tools/bin"
@@ -12,13 +14,19 @@ NAME=theme-plaza
 # (3dbrew: Home Menu, Cache.dat), so raise it whenever the icon, name or tagline changes, or consoles keep the old ones.
 VERSION_MAJOR=0; VERSION_MINOR=4; VERSION_MICRO=0
 VERSION=$VERSION_MAJOR.$VERSION_MINOR.$VERSION_MICRO
+if [ "$1" = "version" ]; then echo "$VERSION"; exit 0; fi
+if [ -n "$DEVKITPRO" ] && command -v make >/dev/null; then
+  build() { make "$@"; }
+else
+  build() { podman run --rm -v "$PWD":/work:Z -w /work docker.io/devkitpro/devkitarm:latest make "$@"; }
+fi
 # the icon file given to badge extdata when the app has to create it (read from romfs by core/extdata.cpp)
 "$TOOLS/bannertool-1.2.3-linux/bannertool" makesmdh -s "HOME Menu badges" -l "Badge data for the HOME Menu" -p "Theme Plaza" -i meta/icon.png -o romfs/extdata.smdh >/dev/null
 if [ "$1" = "release" ]; then
   NAME=theme-plaza-release
-  podman run --rm -v "$PWD":/work:Z -w /work docker.io/devkitpro/devkitarm:latest make -j"$(nproc)" BUILD=build-release TARGET=$NAME APP_DEFINES= APP_VERSION=$VERSION
+  build -j"$(nproc)" BUILD=build-release TARGET=$NAME APP_DEFINES= APP_VERSION=$VERSION
 else
-  podman run --rm -v "$PWD":/work:Z -w /work docker.io/devkitpro/devkitarm:latest make -j"$(nproc)" APP_VERSION=$VERSION "$@"
+  build -j"$(nproc)" APP_VERSION=$VERSION "$@"
   [ "$1" = "clean" ] && exit 0
 fi
 mkdir -p build
